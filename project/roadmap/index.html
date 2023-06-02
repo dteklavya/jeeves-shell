@@ -1,0 +1,1407 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../reference/environment-variables/JEEVES_ROOT/">
+      
+      
+        <link rel="next" href="../decisions/start-jeeves-project/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15+insiders-4.35.3">
+    
+    
+      
+        <title>Roadmap - jeeves</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cac7c1ad.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../assets/termynal/termynal.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="jeeves" class="md-header__button md-logo" aria-label="jeeves" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15 14 6 3V7l-6 3v4m-6 0-6 3V7l6 3v4m1-4h4v4h-4v-4Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            jeeves
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Roadmap
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jeeves-sh/jeeves-shell" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jeeves-shell
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="jeeves" class="md-nav__button md-logo" aria-label="jeeves" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15 14 6 3V7l-6 3v4m-6 0-6 3V7l6 3v4m1-4h4v4h-4v-4Z"/></svg>
+
+    </a>
+    jeeves
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jeeves-sh/jeeves-shell" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jeeves-shell
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to jeeves!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jeeves-py/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    jeeves.py
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_hidden/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    def _hidden()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../typer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Typer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Shell Commands with sh
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rich/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Pretty output with rich
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/sub-commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Sub-commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/jeeves-package/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Jeeves package
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugins
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Plugins
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugins/why/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Why plugins?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugins/how-to/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Your new jeeves-super-plugin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/options/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Options
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/environment-variables/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    
+  
+    Environment variables
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_9_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Environment variables
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/environment-variables/JEEVES_ROOT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    JEEVES_ROOT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Project
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Project
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_2" >
+        
+          <label class="md-nav__link" for="__nav_10_2" id="__nav_10_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Decisions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Decisions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../decisions/start-jeeves-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Start Jeeves project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../decisions/shell-combinators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Use sh for shell combinators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Roadmap</h1>
+
+<body><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: %3 Pages: 1 -->
+<svg width="998pt" height="1072pt"
+ viewBox="0.00 0.00 998.00 1072.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1068)">
+<title>%3</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-1068 994,-1068 994,4 -4,4"/>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b14 -->
+<g id="node1" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b14</title>
+<path fill="#788897" stroke="transparent" d="M534,-4C534,-4 734,-4 734,-4 740,-4 746,-10 746,-16 746,-16 746,-191 746,-191 746,-197 740,-203 734,-203 734,-203 534,-203 534,-203 528,-203 522,-197 522,-191 522,-191 522,-16 522,-16 522,-10 528,-4 534,-4"/>
+<text text-anchor="start" x="538" y="-167.3" font-family="Arial" font-weight="bold" font-size="24.00" fill="white">⊻</text>
+<text text-anchor="start" x="588" y="-176.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">sh command streams</text>
+<text text-anchor="start" x="588" y="-162.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">decorator — where?</text>
+<polyline fill="none" stroke="#4b5d6c" points="523,-96.5 745,-96.5 "/>
+<polyline fill="none" stroke="#4b5d6c" points="745,-143.5 523,-143.5 "/>
+<text text-anchor="start" x="590.5" y="-116.3" font-family="Arial" font-size="14.00" fill="white">Part of Jeeves</text>
+<polyline fill="none" stroke="#4b5d6c" points="523,-49.5 745,-49.5 "/>
+<polyline fill="none" stroke="#4b5d6c" points="745,-96.5 523,-96.5 "/>
+<text text-anchor="start" x="605" y="-69.3" font-family="Arial" font-size="14.00" fill="white">Part of sh</text>
+<text text-anchor="start" x="579" y="-23.3" font-family="Arial" font-size="14.00" fill="white">Separate package</text>
+<path fill="none" stroke="#4b5d6c" d="M534,-4C534,-4 734,-4 734,-4 740,-4 746,-10 746,-16 746,-16 746,-191 746,-191 746,-197 740,-203 734,-203 734,-203 534,-203 534,-203 528,-203 522,-197 522,-191 522,-191 522,-16 522,-16 522,-10 528,-4 534,-4"/>
+</g>
+<!-- local_publish -->
+<g id="node4" class="node">
+<title>local_publish</title>
+<path fill="#730fc3" stroke="transparent" d="M810,-450C810,-450 970,-450 970,-450 976,-450 982,-456 982,-462 982,-462 982,-637 982,-637 982,-643 976,-649 970,-649 970,-649 810,-649 810,-649 804,-649 798,-643 798,-637 798,-637 798,-462 798,-462 798,-456 804,-450 810,-450"/>
+<text text-anchor="start" x="814" y="-613.3" font-family="Arial" font-weight="bold" font-size="24.00" fill="white">⊻</text>
+<text text-anchor="start" x="864" y="-622.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">jeeves → social</text>
+<text text-anchor="start" x="864" y="-608.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">media</text>
+<polyline fill="none" stroke="#730fc3" points="799,-542.5 981,-542.5 "/>
+<polyline fill="none" stroke="#730fc3" points="981,-589.5 799,-589.5 "/>
+<text text-anchor="start" x="880" y="-562.3" font-family="Arial" font-size="14.00" fill="white">HN</text>
+<polyline fill="none" stroke="#730fc3" points="799,-495.5 981,-495.5 "/>
+<polyline fill="none" stroke="#730fc3" points="981,-542.5 799,-542.5 "/>
+<text text-anchor="start" x="871.5" y="-515.3" font-family="Arial" font-size="14.00" fill="white">dev.to</text>
+<text text-anchor="start" x="882.5" y="-469.3" font-family="Arial" font-size="14.00" fill="white">…</text>
+<path fill="none" stroke="#730fc3" d="M810,-450C810,-450 970,-450 970,-450 976,-450 982,-456 982,-462 982,-462 982,-637 982,-637 982,-643 976,-649 970,-649 970,-649 810,-649 810,-649 804,-649 798,-643 798,-637 798,-637 798,-462 798,-462 798,-456 804,-450 810,-450"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b14&#45;&gt;local_publish -->
+<g id="edge4" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b14:e&#45;&gt;local_publish:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M746,-172.5C842.08,-172.5 708.83,-586.01 787.89,-616.7"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="787.54,-620.2 798,-618.5 788.77,-613.3 787.54,-620.2"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b26 -->
+<g id="node2" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b26</title>
+<path fill="#788897" stroke="transparent" d="M283,-539.5C283,-539.5 458,-539.5 458,-539.5 464,-539.5 470,-545.5 470,-551.5 470,-551.5 470,-679.5 470,-679.5 470,-685.5 464,-691.5 458,-691.5 458,-691.5 283,-691.5 283,-691.5 277,-691.5 271,-685.5 271,-679.5 271,-679.5 271,-551.5 271,-551.5 271,-545.5 277,-539.5 283,-539.5"/>
+<text text-anchor="start" x="287.5" y="-656.3" font-family="Arial" font-weight="bold" font-size="24.00" fill="white">⊻</text>
+<text text-anchor="start" x="337.5" y="-665.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">Document jeeves&#45;</text>
+<text text-anchor="start" x="337.5" y="-651.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">yeti&#45;pyproject</text>
+<polyline fill="none" stroke="#4b5d6c" points="272.5,-585.5 469.5,-585.5 "/>
+<polyline fill="none" stroke="#4b5d6c" points="469.5,-632.5 272.5,-632.5 "/>
+<text text-anchor="start" x="334" y="-605.3" font-family="Arial" font-size="14.00" fill="white">At jeeves.sh</text>
+<text text-anchor="start" x="321" y="-559.3" font-family="Arial" font-size="14.00" fill="white">At GitHub pages</text>
+<path fill="none" stroke="#4b5d6c" d="M283,-539.5C283,-539.5 458,-539.5 458,-539.5 464,-539.5 470,-545.5 470,-551.5 470,-551.5 470,-679.5 470,-679.5 470,-685.5 464,-691.5 458,-691.5 458,-691.5 283,-691.5 283,-691.5 277,-691.5 271,-685.5 271,-679.5 271,-679.5 271,-551.5 271,-551.5 271,-545.5 277,-539.5 283,-539.5"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b24 -->
+<g id="node13" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b24</title>
+<path fill="#788897" stroke="#4b5d6c" d="M710.5,-699.5C710.5,-699.5 557.5,-699.5 557.5,-699.5 551.5,-699.5 545.5,-693.5 545.5,-687.5 545.5,-687.5 545.5,-639.5 545.5,-639.5 545.5,-633.5 551.5,-627.5 557.5,-627.5 557.5,-627.5 710.5,-627.5 710.5,-627.5 716.5,-627.5 722.5,-633.5 722.5,-639.5 722.5,-639.5 722.5,-687.5 722.5,-687.5 722.5,-693.5 716.5,-699.5 710.5,-699.5"/>
+<text text-anchor="start" x="567.5" y="-667.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">Build a Plugins page</text>
+<text text-anchor="start" x="594.5" y="-653.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">with catalog</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b26&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b24 -->
+<g id="edge12" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b26:e&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b24:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M470.5,-661.5C500,-661.5 509.77,-663.09 534.96,-663.43"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="534.98,-666.93 545,-663.5 535.02,-659.93 534.98,-666.93"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b30 -->
+<g id="node3" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b30</title>
+<path fill="#788897" stroke="transparent" d="M20,-809.5C20,-809.5 207,-809.5 207,-809.5 213,-809.5 219,-815.5 219,-821.5 219,-821.5 219,-963.5 219,-963.5 219,-969.5 213,-975.5 207,-975.5 207,-975.5 20,-975.5 20,-975.5 14,-975.5 8,-969.5 8,-963.5 8,-963.5 8,-821.5 8,-821.5 8,-815.5 14,-809.5 20,-809.5"/>
+<text text-anchor="start" x="24.5" y="-933.3" font-family="Arial" font-weight="bold" font-size="24.00" fill="white">⊻</text>
+<text text-anchor="start" x="74.5" y="-949.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">Move jeeves&#45;yeti&#45;</text>
+<text text-anchor="start" x="74.5" y="-935.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">pyproject → jeeves&#45;</text>
+<text text-anchor="start" x="74.5" y="-921.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">sh org?</text>
+<polyline fill="none" stroke="#4b5d6c" points="9.5,-855.5 218.5,-855.5 "/>
+<polyline fill="none" stroke="#4b5d6c" points="218.5,-902.5 9.5,-902.5 "/>
+<text text-anchor="start" x="100" y="-875.3" font-family="Arial" font-size="14.00" fill="white">True</text>
+<text text-anchor="start" x="97" y="-829.3" font-family="Arial" font-size="14.00" fill="white">False</text>
+<path fill="none" stroke="#4b5d6c" d="M20,-809.5C20,-809.5 207,-809.5 207,-809.5 213,-809.5 219,-815.5 219,-821.5 219,-821.5 219,-963.5 219,-963.5 219,-969.5 213,-975.5 207,-975.5 207,-975.5 20,-975.5 20,-975.5 14,-975.5 8,-969.5 8,-963.5 8,-963.5 8,-821.5 8,-821.5 8,-815.5 14,-809.5 20,-809.5"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b30&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b26 -->
+<g id="edge14" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b30:e&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b26:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M219.5,-938.5C341.09,-938.5 157.59,-677.49 261.31,-662.2"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="261.76,-665.68 271.5,-661.5 261.28,-658.69 261.76,-665.68"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b11 -->
+<g id="node5" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b11</title>
+<path fill="#ac6363" stroke="#ac6363" d="M700.5,-1064C700.5,-1064 567.5,-1064 567.5,-1064 561.5,-1064 555.5,-1058 555.5,-1052 555.5,-1052 555.5,-1017 555.5,-1017 555.5,-1011 561.5,-1005 567.5,-1005 567.5,-1005 700.5,-1005 700.5,-1005 706.5,-1005 712.5,-1011 712.5,-1017 712.5,-1017 712.5,-1052 712.5,-1052 712.5,-1058 706.5,-1064 700.5,-1064"/>
+<text text-anchor="start" x="577.5" y="-1031.8" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">Copyright is 2022</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b11&#45;&gt;local_publish -->
+<g id="edge1" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b11:e&#45;&gt;local_publish:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M714,-1034.5C738.52,-1034.5 743.04,-1018.43 754,-996.5 790.18,-924.1 719.95,-644.06 787.98,-620.13"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="788.69,-623.56 798,-618.5 787.57,-616.65 788.69,-623.56"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b12 -->
+<g id="node6" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b12</title>
+<path fill="#788897" stroke="#4b5d6c" d="M702.5,-987C702.5,-987 565.5,-987 565.5,-987 559.5,-987 553.5,-981 553.5,-975 553.5,-975 553.5,-940 553.5,-940 553.5,-934 559.5,-928 565.5,-928 565.5,-928 702.5,-928 702.5,-928 708.5,-928 714.5,-934 714.5,-940 714.5,-940 714.5,-975 714.5,-975 714.5,-981 708.5,-987 702.5,-987"/>
+<text text-anchor="start" x="575.5" y="-954.8" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">Make social cards</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b12&#45;&gt;local_publish -->
+<g id="edge2" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b12:e&#45;&gt;local_publish:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M716,-957.5C740.2,-957.5 743.28,-940.2 754,-918.5 782.22,-861.4 736.19,-644.17 787.99,-620.58"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="788.92,-623.96 798,-618.5 787.5,-617.11 788.92,-623.96"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b13 -->
+<g id="node7" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b13</title>
+<path fill="#788897" stroke="#4b5d6c" d="M703,-909.5C703,-909.5 565,-909.5 565,-909.5 559,-909.5 553,-903.5 553,-897.5 553,-897.5 553,-807.5 553,-807.5 553,-801.5 559,-795.5 565,-795.5 565,-795.5 703,-795.5 703,-795.5 709,-795.5 715,-801.5 715,-807.5 715,-807.5 715,-897.5 715,-897.5 715,-903.5 709,-909.5 703,-909.5"/>
+<text text-anchor="start" x="588.5" y="-877.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">In alternatives</text>
+<text text-anchor="start" x="582" y="-863.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">tables, highlight</text>
+<text text-anchor="start" x="598" y="-849.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">the chosen</text>
+<text text-anchor="start" x="584" y="-835.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">alternative with</text>
+<text text-anchor="start" x="575" y="-821.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">green background</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b13&#45;&gt;local_publish -->
+<g id="edge3" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b13:e&#45;&gt;local_publish:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M716,-852.5C749.85,-852.5 741.15,-817.82 754,-786.5 781.86,-718.58 726.7,-627.87 787.67,-619.18"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="788.25,-622.65 798,-618.5 787.79,-615.66 788.25,-622.65"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b18 -->
+<g id="node8" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b18</title>
+<path fill="#788897" stroke="#4b5d6c" d="M445.5,-215.5C445.5,-215.5 295.5,-215.5 295.5,-215.5 289.5,-215.5 283.5,-209.5 283.5,-203.5 283.5,-203.5 283.5,-141.5 283.5,-141.5 283.5,-135.5 289.5,-129.5 295.5,-129.5 295.5,-129.5 445.5,-129.5 445.5,-129.5 451.5,-129.5 457.5,-135.5 457.5,-141.5 457.5,-141.5 457.5,-203.5 457.5,-203.5 457.5,-209.5 451.5,-215.5 445.5,-215.5"/>
+<text text-anchor="start" x="305.5" y="-183.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">progress bars when</text>
+<text text-anchor="start" x="329" y="-169.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">executing sh</text>
+<text text-anchor="start" x="334" y="-155.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">commands</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b18&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b14 -->
+<g id="edge5" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b18:e&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b14:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M458.5,-172.5C482.97,-172.5 491.53,-172.5 511.78,-172.5"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="512,-176 522,-172.5 512,-169 512,-176"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b19 -->
+<g id="node9" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b19</title>
+<path fill="#788897" stroke="#4b5d6c" d="M717,-777C717,-777 551,-777 551,-777 545,-777 539,-771 539,-765 539,-765 539,-730 539,-730 539,-724 545,-718 551,-718 551,-718 717,-718 717,-718 723,-718 729,-724 729,-730 729,-730 729,-765 729,-765 729,-771 723,-777 717,-777"/>
+<text text-anchor="start" x="561" y="-744.8" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">Support dependencies</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b19&#45;&gt;local_publish -->
+<g id="edge6" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b19:e&#45;&gt;local_publish:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M730,-747.5C791.01,-747.5 739.98,-633.17 787.86,-619.78"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="788.52,-623.22 798,-618.5 787.64,-616.28 788.52,-623.22"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b20 -->
+<g id="node10" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b20</title>
+<path fill="#788897" stroke="#4b5d6c" d="M447,-979.5C447,-979.5 294,-979.5 294,-979.5 288,-979.5 282,-973.5 282,-967.5 282,-967.5 282,-905.5 282,-905.5 282,-899.5 288,-893.5 294,-893.5 294,-893.5 447,-893.5 447,-893.5 453,-893.5 459,-899.5 459,-905.5 459,-905.5 459,-967.5 459,-967.5 459,-973.5 453,-979.5 447,-979.5"/>
+<text text-anchor="start" x="311.5" y="-947.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">Review awesome&#45;</text>
+<text text-anchor="start" x="304" y="-933.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">python&#45;dependency&#45;</text>
+<text text-anchor="start" x="342.5" y="-919.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">injection</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b20&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b19 -->
+<g id="edge7" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b20:e&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b19:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M459.5,-936.5C546.73,-936.5 455.2,-762.69 527.76,-748.43"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="528.36,-751.89 538,-747.5 527.72,-744.92 528.36,-751.89"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b21 -->
+<g id="node11" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b21</title>
+<path fill="#788897" stroke="#4b5d6c" d="M418.5,-875.5C418.5,-875.5 322.5,-875.5 322.5,-875.5 316.5,-875.5 310.5,-869.5 310.5,-863.5 310.5,-863.5 310.5,-815.5 310.5,-815.5 310.5,-809.5 316.5,-803.5 322.5,-803.5 322.5,-803.5 418.5,-803.5 418.5,-803.5 424.5,-803.5 430.5,-809.5 430.5,-815.5 430.5,-815.5 430.5,-863.5 430.5,-863.5 430.5,-869.5 424.5,-875.5 418.5,-875.5"/>
+<text text-anchor="start" x="337" y="-843.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">Document</text>
+<text text-anchor="start" x="332.5" y="-829.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">alternatives</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b21&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b19 -->
+<g id="edge8" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b21:e&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b19:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M431.5,-839.5C490.38,-839.5 477.35,-757.97 527.81,-748.41"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="528.35,-751.88 538,-747.5 527.73,-744.9 528.35,-751.88"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b22 -->
+<g id="node12" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b22</title>
+<path fill="#788897" stroke="#4b5d6c" d="M427.5,-785.5C427.5,-785.5 313.5,-785.5 313.5,-785.5 307.5,-785.5 301.5,-779.5 301.5,-773.5 301.5,-773.5 301.5,-725.5 301.5,-725.5 301.5,-719.5 307.5,-713.5 313.5,-713.5 313.5,-713.5 427.5,-713.5 427.5,-713.5 433.5,-713.5 439.5,-719.5 439.5,-725.5 439.5,-725.5 439.5,-773.5 439.5,-773.5 439.5,-779.5 433.5,-785.5 427.5,-785.5"/>
+<text text-anchor="start" x="323.5" y="-753.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">pre&#45;conditions</text>
+<text text-anchor="start" x="344" y="-739.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">perhaps</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b22&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b19 -->
+<g id="edge9" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b22:e&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b19:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M440.5,-749.5C480.29,-749.5 492.66,-747.81 527.95,-747.54"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="528.01,-751.04 538,-747.5 527.99,-744.04 528.01,-751.04"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b24&#45;&gt;local_publish -->
+<g id="edge10" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b24:e&#45;&gt;local_publish:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M723,-663.5C758.08,-663.5 759.27,-626.86 787.72,-619.7"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="788.48,-623.14 798,-618.5 787.66,-616.19 788.48,-623.14"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b25 -->
+<g id="node14" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b25</title>
+<path fill="#788897" stroke="#4b5d6c" d="M434.5,-517.5C434.5,-517.5 306.5,-517.5 306.5,-517.5 300.5,-517.5 294.5,-511.5 294.5,-505.5 294.5,-505.5 294.5,-457.5 294.5,-457.5 294.5,-451.5 300.5,-445.5 306.5,-445.5 306.5,-445.5 434.5,-445.5 434.5,-445.5 440.5,-445.5 446.5,-451.5 446.5,-457.5 446.5,-457.5 446.5,-505.5 446.5,-505.5 446.5,-511.5 440.5,-517.5 434.5,-517.5"/>
+<text text-anchor="start" x="316.5" y="-485.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">Support cards in</text>
+<text text-anchor="start" x="320.5" y="-471.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">mkdocs&#45;iolanta</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b25&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b24 -->
+<g id="edge11" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b25:e&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b24:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M447.5,-481.5C535.5,-481.5 459.99,-648.88 534.58,-662.61"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="534.74,-666.13 545,-663.5 535.34,-659.16 534.74,-666.13"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b29 -->
+<g id="node15" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b29</title>
+<path fill="#ac6363" stroke="#ac6363" d="M191,-787.5C191,-787.5 36,-787.5 36,-787.5 30,-787.5 24,-781.5 24,-775.5 24,-775.5 24,-671.5 24,-671.5 24,-665.5 30,-659.5 36,-659.5 36,-659.5 191,-659.5 191,-659.5 197,-659.5 203,-665.5 203,-671.5 203,-671.5 203,-775.5 203,-775.5 203,-781.5 197,-787.5 191,-787.5"/>
+<text text-anchor="start" x="76.5" y="-755.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">jeeves&#45;yeti&#45;</text>
+<text text-anchor="start" x="46" y="-741.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">pyproject only scans</text>
+<text text-anchor="start" x="50" y="-727.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">and formats python</text>
+<text text-anchor="start" x="68" y="-713.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">packages, not</text>
+<text text-anchor="start" x="66.5" y="-699.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">individual files</text>
+<text text-anchor="start" x="69.5" y="-685.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">like jeeves.py</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b29&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b26 -->
+<g id="edge13" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b29:e&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b26:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M204.5,-723.5C241.27,-723.5 233.1,-672.58 261.44,-663.03"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="262.14,-666.47 271.5,-661.5 261.09,-659.55 262.14,-666.47"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b31 -->
+<g id="node16" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b31</title>
+<path fill="#788897" stroke="#4b5d6c" d="M183.5,-641.5C183.5,-641.5 43.5,-641.5 43.5,-641.5 37.5,-641.5 31.5,-635.5 31.5,-629.5 31.5,-629.5 31.5,-567.5 31.5,-567.5 31.5,-561.5 37.5,-555.5 43.5,-555.5 43.5,-555.5 183.5,-555.5 183.5,-555.5 189.5,-555.5 195.5,-561.5 195.5,-567.5 195.5,-567.5 195.5,-629.5 195.5,-629.5 195.5,-635.5 189.5,-641.5 183.5,-641.5"/>
+<text text-anchor="start" x="63.5" y="-609.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">See if there is a</text>
+<text text-anchor="start" x="58" y="-595.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">tool to document</text>
+<text text-anchor="start" x="53.5" y="-581.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">Click with mkdocs</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b31&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b26 -->
+<g id="edge15" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b31:e&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b26:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M196.5,-598.5C236.29,-598.5 229.63,-651.14 261.44,-660.18"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="261.13,-663.67 271.5,-661.5 262.04,-656.73 261.13,-663.67"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b32 -->
+<g id="node17" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b32</title>
+<path fill="#ac6363" stroke="#ac6363" d="M192,-537.5C192,-537.5 35,-537.5 35,-537.5 29,-537.5 23,-531.5 23,-525.5 23,-525.5 23,-463.5 23,-463.5 23,-457.5 29,-451.5 35,-451.5 35,-451.5 192,-451.5 192,-451.5 198,-451.5 204,-457.5 204,-463.5 204,-463.5 204,-525.5 204,-525.5 204,-531.5 198,-537.5 192,-537.5"/>
+<text text-anchor="start" x="45" y="-505.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">Terminal output from</text>
+<text text-anchor="start" x="76.5" y="-491.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">jeeves&#45;yeti&#45;</text>
+<text text-anchor="start" x="51" y="-477.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">pyproject is broken</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b32&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b26 -->
+<g id="edge16" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b32:e&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b26:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M205.5,-494.5C281.57,-494.5 200.09,-646.21 261.38,-660.43"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="261.19,-663.93 271.5,-661.5 261.92,-656.97 261.19,-663.93"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b43 -->
+<g id="node18" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b43</title>
+<path fill="#ac6363" stroke="#ac6363" d="M703,-609.5C703,-609.5 565,-609.5 565,-609.5 559,-609.5 553,-603.5 553,-597.5 553,-597.5 553,-549.5 553,-549.5 553,-543.5 559,-537.5 565,-537.5 565,-537.5 703,-537.5 703,-537.5 709,-537.5 715,-543.5 715,-549.5 715,-549.5 715,-597.5 715,-597.5 715,-603.5 709,-609.5 703,-609.5"/>
+<text text-anchor="start" x="575" y="-577.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">Tests are failing at</text>
+<text text-anchor="start" x="627" y="-563.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">CI</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b43&#45;&gt;local_publish -->
+<g id="edge17" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b43:e&#45;&gt;local_publish:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M716,-573.5C753.84,-573.5 756.29,-610.78 787.77,-617.48"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="787.7,-620.99 798,-618.5 788.4,-614.02 787.7,-620.99"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b51 -->
+<g id="node19" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b51</title>
+<path fill="#788897" stroke="#4b5d6c" d="M710.5,-519.5C710.5,-519.5 557.5,-519.5 557.5,-519.5 551.5,-519.5 545.5,-513.5 545.5,-507.5 545.5,-507.5 545.5,-445.5 545.5,-445.5 545.5,-439.5 551.5,-433.5 557.5,-433.5 557.5,-433.5 710.5,-433.5 710.5,-433.5 716.5,-433.5 722.5,-439.5 722.5,-445.5 722.5,-445.5 722.5,-507.5 722.5,-507.5 722.5,-513.5 716.5,-519.5 710.5,-519.5"/>
+<text text-anchor="start" x="580" y="-487.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">Generate Github</text>
+<text text-anchor="start" x="567.5" y="-473.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">workflows at jeeves&#45;</text>
+<text text-anchor="start" x="589.5" y="-459.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">yeti&#45;pyproject</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b51&#45;&gt;local_publish -->
+<g id="edge18" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b51:e&#45;&gt;local_publish:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M723,-476.5C790.61,-476.5 733.39,-603.92 787.83,-617.36"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="787.67,-620.86 798,-618.5 788.45,-613.91 787.67,-620.86"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b52 -->
+<g id="node20" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b52</title>
+<path fill="#788897" stroke="#4b5d6c" d="M440,-427.5C440,-427.5 301,-427.5 301,-427.5 295,-427.5 289,-421.5 289,-415.5 289,-415.5 289,-367.5 289,-367.5 289,-361.5 295,-355.5 301,-355.5 301,-355.5 440,-355.5 440,-355.5 446,-355.5 452,-361.5 452,-367.5 452,-367.5 452,-415.5 452,-415.5 452,-421.5 446,-427.5 440,-427.5"/>
+<text text-anchor="start" x="311" y="-395.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">Implement `jeeves</text>
+<text text-anchor="start" x="334" y="-381.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">boilerplate`</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b52&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b51 -->
+<g id="edge19" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b52:e&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b51:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M453.5,-391.5C505.32,-391.5 491.75,-465.59 534.89,-475.43"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="534.69,-478.92 545,-476.5 535.43,-471.96 534.69,-478.92"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b68 -->
+<g id="node21" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b68</title>
+<path fill="#ac6363" stroke="#ac6363" d="M701.5,-415.5C701.5,-415.5 566.5,-415.5 566.5,-415.5 560.5,-415.5 554.5,-409.5 554.5,-403.5 554.5,-403.5 554.5,-341.5 554.5,-341.5 554.5,-335.5 560.5,-329.5 566.5,-329.5 566.5,-329.5 701.5,-329.5 701.5,-329.5 707.5,-329.5 713.5,-335.5 713.5,-341.5 713.5,-341.5 713.5,-403.5 713.5,-403.5 713.5,-409.5 707.5,-415.5 701.5,-415.5"/>
+<text text-anchor="start" x="577" y="-383.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">The word Build is</text>
+<text text-anchor="start" x="576.5" y="-369.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">twice repeated on</text>
+<text text-anchor="start" x="593" y="-355.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">the first card</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b68&#45;&gt;local_publish -->
+<g id="edge20" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b68:e&#45;&gt;local_publish:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M714,-372.5C743.16,-372.5 741.6,-398.11 754,-424.5 790.06,-501.23 716.11,-609.21 787.96,-617.93"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="787.82,-621.43 798,-618.5 788.21,-614.44 787.82,-621.43"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b69 -->
+<g id="node22" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b69</title>
+<path fill="#788897" stroke="#4b5d6c" d="M707.5,-311.5C707.5,-311.5 560.5,-311.5 560.5,-311.5 554.5,-311.5 548.5,-305.5 548.5,-299.5 548.5,-299.5 548.5,-237.5 548.5,-237.5 548.5,-231.5 554.5,-225.5 560.5,-225.5 560.5,-225.5 707.5,-225.5 707.5,-225.5 713.5,-225.5 719.5,-231.5 719.5,-237.5 719.5,-237.5 719.5,-299.5 719.5,-299.5 719.5,-305.5 713.5,-311.5 707.5,-311.5"/>
+<text text-anchor="start" x="585.5" y="-279.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">Sync jeeves.py</text>
+<text text-anchor="start" x="570.5" y="-265.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">example with home</text>
+<text text-anchor="start" x="588.5" y="-251.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">page example</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b69&#45;&gt;local_publish -->
+<g id="edge21" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b69:e&#45;&gt;local_publish:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M721,-268.5C796.9,-268.5 725.72,-586.46 787.83,-616.26"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="787.48,-619.77 798,-618.5 788.98,-612.93 787.48,-619.77"/>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b70 -->
+<g id="node23" class="node">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b70</title>
+<path fill="#788897" stroke="#4b5d6c" d="M438.5,-305.5C438.5,-305.5 302.5,-305.5 302.5,-305.5 296.5,-305.5 290.5,-299.5 290.5,-293.5 290.5,-293.5 290.5,-245.5 290.5,-245.5 290.5,-239.5 296.5,-233.5 302.5,-233.5 302.5,-233.5 438.5,-233.5 438.5,-233.5 444.5,-233.5 450.5,-239.5 450.5,-245.5 450.5,-245.5 450.5,-293.5 450.5,-293.5 450.5,-299.5 444.5,-305.5 438.5,-305.5"/>
+<text text-anchor="start" x="312.5" y="-273.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">Add args to home</text>
+<text text-anchor="start" x="325" y="-259.3" font-family="Arial" font-weight="bold" font-size="14.00" fill="white">page example</text>
+</g>
+<!-- file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b70&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b69 -->
+<g id="edge22" class="edge">
+<title>file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b70:e&#45;&gt;file_///home/runner/work/jeeves&#45;shell/jeeves&#45;shell/docs/project/roadmap.md/b69:w</title>
+<path fill="none" stroke="#4b5d6c" stroke-width="2.5" d="M451.5,-269.5C490.3,-269.5 502.5,-268.66 536.72,-268.52"/>
+<polygon fill="#4b5d6c" stroke="#4b5d6c" stroke-width="2.5" points="537.01,-272.02 547,-268.5 536.99,-265.02 537.01,-272.02"/>
+</g>
+</g>
+</svg>
+</body>
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 jeeves.sh
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs Insiders
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.indexes", "content.code.annotate", "navigation.sections"], "search": "../../assets/javascripts/workers/search.6c7302c4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.10c6cd24.min.js"></script>
+      
+    
+  </body>
+</html>

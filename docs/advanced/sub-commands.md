@@ -16,7 +16,7 @@ If `j` exports too many commands, it might make sense to group them into subcomm
 {{ j(page.meta.subcommands, environment={'JEEVES_DISABLE_PLUGINS': 'true'}) }}
 
 !!! info "Hidden commands"
-    Note that we have to use underscore here, otherwise `def mypy` and other functions will be bound to the top-level `j` command. See {{ render("hidden-functions") }} for details. See {{ render("jeeves-package") }} to see how to avoid that.
+    Note that we have to use underscore here, otherwise `def mypy` and other functions will be bound to the top-level `j` command. See [`def _hidden`](../_hidden.md) for details. See [Jeeves package](jeeves-package.md) to see how to avoid that.
 
 {# todo: Reference to an mkdocs page with render() does not generate a link. #}
 
